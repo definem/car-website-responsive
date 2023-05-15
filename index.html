@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Website</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="circle-1"></div>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header__wrapper">
+          <a href="#">
+            <img
+              src="./images/logo.svg"
+              width="71"
+              height="22"
+              alt="Elecar Logo"
+            />
+          </a>
+          <button
+            id="hamburgerBtn"
+            aria-controls="#mainNavigation"
+            aria-expanded="false"
+            class="hamburger-btn"
+          >👆</button>
+          <nav class="sitenav" id="mainNavigation">
+            <ul class="sitenav__list">
+              <li class="sitenav__item">
+                <a class="sitenav__link sitenav__link--active" href="#">Home</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">About</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Popular</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Featured</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="site-main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <h1 class="hero__title">Choose the best car</h1>
+            <p class="hero__text">Porsche Mission E</p>
+            <p class="hero__subtext">Electric car</p>
+
+            <img
+              class="hero__car"
+              src="./images/hero_car.svg"
+              width="380"
+              height="222"
+              alt="Car"
+            />
+            <ul class="hero__list">
+              <li class="hero__item">
+                <h3 class="hero__heading">24°</h3>
+                <div class="hero__subheading">TEMPERATURE</div>
+              </li>
+              <li class="hero__item">
+                <h3 class="hero__heading">873</h3>
+                <div class="hero__subheading">MILEAGE</div>
+              </li>
+              <li class="hero__item">
+                <h3 class="hero__heading">94%</h3>
+                <div class="hero__subheading">BATTERY</div>
+              </li>
+            </ul>
+            <button class="hero__btn">
+              <img src="./images/start.svg" aria-hidden="true" alt="start" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__wrapper">
+            <img
+              class="about__img"
+              src="./images/about.png"
+              alt="See the future with high-performance electric cars produced by renowned brands. They feature futuristic builds and designs with new and innovative platforms that last a long time."
+            />
+            <div class="about__inner">
+              <h2 class="about__title">Machines With Future Technology</h2>
+              <p class="about__text">
+                See the future with high-performance electric cars produced by
+                renowned brands. They feature futuristic builds and designs with
+                new and innovative platforms that last a long time.
+              </p>
+              <button class="about__btn">Know more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="choose">
+        <div class="container">
+          <h2 class="choose__title">
+            Choose Your Electric Car Of The Porsche Brand
+          </h2>
+        </div>
+      </section> -->
+      <section class="features">
+        <div class="container">
+          <div class="features__wrapper">
+            <h2 class="features__title">More Features</h2>
+            <img class="features__img" src="./images/map.svg" alt="map" />
+          </div>
+        </div>
+      </section>
+      <section class="cars">
+        <div class="container">
+          <h2 class="cars__title">Featured Luxury Cars</h2>
+          <ul class="cars__filter-list filter-list">
+            <li class="filter-list__item filter-list__item--active">All</li>
+            <li class="filter-list__item"></li>
+            <li class="filter-list__item"></li>
+            <li class="filter-list__item"></li>
+          </ul>
+          <ul class="cars__list">
+            <li class="cars__item">
+              <h3 class="cars__heading">Tesla</h3>
+              <p class="cars__subheading">Model X</p>
+              <img class="cars__img" src="./images/featured1.svg" alt="Tesla" />
+              <p class="cars__price">$98,900</p>
+            </li>
+            <li class="cars__item">
+              <h3 class="cars__heading">Tesla</h3>
+              <p class="cars__subheading">Model 3</p>
+              <img class="cars__img" src="./images/featured2.svg" alt="Tesla" />
+              <p class="cars__price">$45,900</p>
+            </li>
+            <li class="cars__item">
+              <h3 class="cars__heading">Audi</h3>
+              <p class="cars__subheading">E-tron</p>
+              <img class="cars__img" src="./images/featured3.svg" alt="Tesla" />
+              <p class="cars__price">$175, 900</p>
+            </li>
+            <li class="cars__item">
+              <h3 class="cars__heading">Porsche</h3>
+              <p class="cars__subheading">Boxster 987</p>
+              <img class="cars__img" src="./images/featured5.svg" alt="Tesla" />
+              <p class="cars__price">$126,900</p>
+            </li>
+            <li class="cars__item">
+              <h3 class="cars__heading">Porsche</h3>
+              <p class="cars__subheading">Panamera</p>
+              <img class="cars__img" src="./images/featured5.svg" alt="Tesla" />
+              <p class="cars__price">$126,900</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="container">
+          <div class="cta__wrapper">
+            <h2 class="cta__title">Do You Want To Receive Special Offers?</h2>
+            <p class="cta__text">
+              Be the first to receive all the information about our products and
+              new cars by email by subscribing to our mailing list.
+            </p>
+            <button class="cta__btn">Subscribe Now</button>
+          </div>
+        </div>
+      </section>
+      <section class="sponsors">
+        <div class="container">
+          <ul class="sponsors__list">
+            <li class="sponsors__item">
+              <img
+                src="./images/sponsors/logo1.svg"
+                width="40"
+                height="40"
+                alt="sponsor"
+              />
+            </li>
+            <li class="sponsors__item">
+              <img
+                src="./images/sponsors/logo2.svg"
+                width="40"
+                height="40"
+                alt="sponsor"
+              />
+            </li>
+            <li class="sponsors__item">
+              <img
+                src="./images/sponsors/logo3.svg"
+                width="40"
+                height="40"
+                alt="sponsor"
+              />
+            </li>
+            <li class="sponsors__item">
+              <img
+                src="./images/sponsors/logo4.svg"
+                width="40"
+                height="40"
+                alt="sponsor"
+              />
+            </li>
+            <li class="sponsors__item">
+              <img
+                src="./images/sponsors/logo5.svg"
+                width="40"
+                height="40"
+                alt="sponsor"
+              />
+            </li>
+            <li class="sponsors__item">
+              <img
+                src="./images/sponsors/logo6.svg"
+                width="40"
+                height="40"
+                alt="sponsor"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__container">
+            <a href="#">
+              <img
+                src="./images/logo.svg"
+                width="71"
+                height="22"
+                alt="Elecar Logo"
+              />
+            </a>
+            <p class="footer__sometext">
+              We offer the best electric cars of the most recognized brands in
+              the world.
+            </p>
+          </div>
+          <div class="footer__container">
+            <strong class="footer__heading"> Company </strong>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#"> About </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Cars </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> History </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Shop </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__container">
+            <strong class="footer__heading"> Information </strong>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Request a quote </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Find a dealer </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Contact us </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#"> Services </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__container">
+            <strong class="footer__heading"> Follow us </strong>
+            <ul class="footer__social social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" target="blank" href="#">
+                  <img
+                    src="./images/ri_facebook-fill.svg"
+                    alt="facebook"
+                    width="20"
+                    height="20"
+                  />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" target="blank" href="#">
+                  <img
+                    src="./images/ri_instagram-line.svg"
+                    alt="instagram"
+                    width="20"
+                    height="20"
+                  />
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" target="blank" href="#">
+                  <img
+                    src="./images/ri_twitter-line.svg"
+                    alt="twitter"
+                    width="20"
+                    height="20"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">Bedimcode. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
